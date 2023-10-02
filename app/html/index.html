@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God Of War</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  @include('components/_header.html')
+  <main class="main">
+    @include('components/_hero.html')
+    @include('components/_editions.html')
+    @include('components/_controller.html')
+    @include('components/_about.html')
+    @include('components/_explore.html')
+    @include('components/_news.html')
+    @include('components/_faq.html')
+    @include('components/_modal.html')
+  </main>
+  @include('components/_footer.html')
+  <script src="js/main.min.js" type="module"></script>
+</body>
+
+</html>

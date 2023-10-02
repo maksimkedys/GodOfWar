@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  min-height: max(70vh, 756px);
+  display: flex;
+  align-items: center;
+  @include bg(top right);
+  background-size: auto;
+  @media (orientation: landscape) {
+    padding-top: 94px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-image: url("../images/hero-snow.gif");
+    @include bg(center);
+    opacity: 0.2;
+  }
+
+  @include r($xl) {
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @include r($md) {
+    &::before {
+      content: "";
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(89deg, #1c2023 0%, rgba(28, 32, 35, 0) 100%);
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 550px;
+    z-index: 2;
+    animation: move 1.5s ease-in-out;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1;
+
+    @include r($lg) {
+      font-size: 75px;
+    }
+    @include r($sm) {
+      font-size: 45px;
+    }
+    @media (orientation: landscape) {
+      font-size: 45px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    color: $sea;
+    font-size: 18px;
+
+    @include r($lg) {
+      margin-bottom: 30px;
+    }
+    @media (orientation: landscape) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,164 @@
+.explore {
+  padding-top: 90px;
+  @include r($sm) {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 120px;
+
+      @include r($md) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__switch {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    &-text {
+      color: $litedark;
+
+      &.current {
+        color: $lite;
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    width: 55px;
+    height: 25px;
+    background-color: $litedark;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: $accent;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+
+  &__input {
+    &:checked + .explore__checkbox {
+      transform: translateX(150%);
+    }
+  }
+
+  &__content-price {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+
+    @include r($md) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+
+    @include r($md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 12px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      width: 140px;
+      height: 61px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background-color: rgba($orange, 0.8);
+      filter: blur(75px);
+    }
+
+    &--atreus {
+      &:before {
+        background-image: url("../images/explore/atreus-bg.png");
+      }
+      &:after {
+        left: 40%;
+      }
+    }
+    &--kratos {
+      margin-top: -125px;
+      @include r($md) {
+        margin-top: -30px;
+        flex-direction: column;
+      }
+      &:before {
+        background-image: url("../images/explore/kratos-bg.png");
+      }
+    }
+  }
+
+  &__list {
+    margin-bottom: 25px;
+    display: none;
+
+    &.current {
+      display: block;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    span {
+      color: $accent;
+    }
+  }
+
+  &__box-btn {
+    background-color: $orange;
+  }
+}

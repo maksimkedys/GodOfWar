@@ -1,0 +1,74 @@
+.about {
+  padding-top: 92px;
+  @include r($sm) {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__video {
+    position: relative;
+    video {
+      opacity: 0.7;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__text {
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity 0.6s,
+        visibility 0.6s;
+    }
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 0.78;
+    white-space: nowrap;
+
+    @include r($lg) {
+      font-size: 40px;
+    }
+    @include r($sm) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    padding: 9px 26px;
+    color: $lite;
+    background-color: $litedark;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    outline: 2px solid transparent;
+    transition-property: outline-color, background-color, opacity;
+    transition-duration: 0.4s;
+
+    &:focus {
+      outline-color: $accent;
+    }
+    &:hover {
+      background-color: $dark;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+    @include r($sm) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.controller {
+  padding-top: 50px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include r($md) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__content {
+    max-width: 425px;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    p {
+      color: $sea;
+      font-size: 18px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include r($md) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__price {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__btn {
+    padding: 13px 19px;
+    background-color: $orange;
+  }
+
+  &__image {
+    position: relative;
+    animation: shake-vertical 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate both;
+    &::before {
+      content: "";
+      max-width: 194px;
+      width: 100%;
+      max-height: 119px;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(79, 96, 152, 0.8);
+      filter: blur(75px);
+      z-index: -1;
+    }
+  }
+
+  @keyframes shake-vertical {
+    0% {
+      transform: translateY(-15px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

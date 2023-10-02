@@ -1,0 +1,59 @@
+<div class="modal">
+  <div class="modal__inner" style="background-image: url('images/modal-bg.png');">
+    <button class="modal__close" type="button">
+      <svg class="modal__close-icon" width="9" height="9">
+        <use href="images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">
+      GOD OF WAR RAGNAROK
+    </h2>
+    <p class="modal__edition">
+      STANDARD EDTION
+    </p>
+    <form class="modal__form" action="#">
+      <label class="modal__label">
+        CREDIT CARD:
+        <input class="modal__input" id="card" type="text" placeholder="0000 0000 0000 0000" name="card" maxlength="19"
+          required>
+      </label>
+      <div class="modal__label-box">
+        <label class="modal__label modal__label--small">
+          expire:
+          <input class="modal__input" id="expire" type="text" placeholder="mm/yy" name="expire" maxlength="5" required>
+        </label>
+        <label class="modal__label modal__label--small">
+          CVV:
+          <input class="modal__input" type="password" placeholder="***" name="cvv" maxlength="3" required>
+        </label>
+      </div>
+      <label class="modal__label">
+        INSTANT:
+        <input class="modal__input" type="text" placeholder="John Doe" name="name" required>
+      </label>
+      <label class="modal__label modal__label--check">
+        I agree with the <a class="orange" href="#">rules</a> of the site
+        <input class="modal__check sr-only" type="checkbox" name="rules" required>
+        <span class="modal__checkbox"></span>
+      </label>
+      <p class="modal__text">
+        Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms
+        plus
+        any
+        specific additional conditions applying to this product. If you do not wish to accept these terms, do not
+        download
+        this
+        product. See Terms of Service for more important information.
+      </p>
+      <div class="modal__summa">
+        <p class="modal__info">
+          YOUR TOTAL SUMMA:
+        </p>
+        <p class="modal__price">
+          19.99$
+        </p>
+      </div>
+      <button class="modal__btn btn" type="submit">buy NOW</button>
+    </form>
+  </div>
+</div>

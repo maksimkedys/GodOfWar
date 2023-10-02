@@ -1,0 +1,130 @@
+.news {
+  padding-top: 170px;
+  @include r($lg) {
+    padding-top: 80px;
+  }
+  @include r($sm) {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__arrows {
+    max-width: 1400px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  &__swiper-arrow {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray;
+    border-radius: 6px;
+    outline: 2px solid transparent;
+    transition-property: outline-color, background-color;
+    transition-duration: 0.4s;
+    z-index: 2;
+
+    &:focus {
+      outline-color: $accent;
+    }
+    &:hover {
+      background-color: $accent;
+    }
+    &:active {
+      opacity: 0.9;
+    }
+  }
+
+  &__swiper-prev {
+    left: 15px;
+  }
+
+  &__swiper-next {
+    right: 15px;
+  }
+
+  &__swiper-icon {
+    fill: $lite;
+  }
+}
+
+.news-slide {
+  min-height: 384px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 6px;
+  background: linear-gradient(178deg, #30373f 41.63%, #141615 185.57%);
+
+  &__top {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    margin-bottom: 7px;
+    color: $accent;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    color: $gray;
+    font-size: 10px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+    @include r($md) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    margin-right: 25px;
+    border-radius: 6px;
+    @include r($lg) {
+      margin: 0 auto;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+    padding: 7px 30px;
+    background-color: $gray;
+  }
+}
