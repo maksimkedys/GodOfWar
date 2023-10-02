@@ -20,6 +20,10 @@ body {
   flex-grow: 1;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -61,10 +65,6 @@ body {
       transition-delay: 0.5s;
     }
   }
-
-  // .title {
-  //   transition: opacity 0.5s ease-in-out;
-  // }
 
   .faq__item {
     &:last-child {
@@ -112,12 +112,12 @@ body {
 
     .controller__content,
     .explore__box-content {
-      transform: translateX(-100px);
+      transform: translateX(-200%);
     }
 
     .controller__image img,
     .explore__img {
-      transform: translateX(100px);
+      transform: translateX(200%);
     }
 
     .about__video {

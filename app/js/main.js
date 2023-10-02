@@ -47,7 +47,10 @@ const sections = document.querySelectorAll(".section");
 const toggleMenu = function () {
   burger.classList.toggle("burger--active");
   menuList.classList.toggle("menu__list--active");
-  body.classList.toggle("lock");
+
+  if (window.innerWidth < 1200) {
+    body.classList.toggle("lock");
+  }
 };
 
 const scrollToSection = (e) => {
