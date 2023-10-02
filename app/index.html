@@ -13,706 +13,719 @@
 
 <body>
   <header class="header">
-  <div class="container header__inner">
-    <nav class="menu">
-      <button class="burger" type="button">
-        <span class="burger__line"></span>
-        <span class="sr-only">Open menu</span>
-      </button>
-      <ul class="menu__list">
-        <li class="menu__item">
+    <div class="container header__inner">
+      <nav class="menu">
+        <button class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#editions">editions</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#controller">controller</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">ABOUT GAME</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#explore">Explore</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#news">news</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__timer">
+        <span class="header__timer-info">Realease:</span>
+        <ul class="header__timer-content">
+          <li class="header__timer-item">
+            <span class="header__timer-num" id="days">0</span>
+            <span class="header__timer-text">D</span>
+          </li>
+          <li class="header__timer-item">
+            <span class="header__timer-num" id="hours">0</span>
+            <span class="header__timer-text">H</span>
+          </li>
+          <li class="header__timer-item">
+            <span class="header__timer-num" id="minutes">0</span>
+            <span class="header__timer-text">M</span>
+          </li>
+          <li class="header__timer-item">
+            <span class="header__timer-num" id="seconds">0</span>
+            <span class="header__timer-text">S</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">God of War Ragnarök</h1>
+          <p class="hero__text">
+            Taking place three years following the events of the previous game, Fimbulwinter, a great winter that spans
+            three
+            summers, is drawing to a close which will begin the prophesied Ragnarök.
+          </p>
+          <button class="btn btn--big buy-button" data-value="0">
+            buy NOW
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="editions section hidden" id="editions">
+      <div class="container">
+        <h2 class="editions__title title">
+          Editions
+        </h2>
+        <ul class="editions__items">
+          <li class="editions__item">
+            <article class="edition">
+              <img class="edition__img" src="images/editions/1.jpg" alt="Atreus and Kratos" width="316" height="172">
+              <h3 class="edition__title">
+                Standard Edition
+                <span class="edition__subtitle">PS5</span>
+              </h3>
+              <ul class="edition__list">
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Offline play enabled
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Remote Play supported
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Trigger effect required
+                  </p>
+                </li>
+              </ul>
+              <p class="edition__price">19.99$</p>
+              <button class="edition__btn btn buy-button" type="button" data-value="0">
+                buy NOW
+              </button>
+            </article>
+          </li>
+          <li class="editions__item">
+            <article class="edition">
+              <img class="edition__img" src="images/editions/2.jpg" alt="Atreus and Kratos" width="316" height="172">
+              <h3 class="edition__title">
+                Standard Edition
+                <span class="edition__subtitle">PS4</span>
+              </h3>
+              <ul class="edition__list">
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Offline play enabled
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Remote Play supported
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Trigger effect required
+                  </p>
+                </li>
+              </ul>
+              <p class="edition__price">18.99$</p>
+              <button class="edition__btn btn buy-button" type="button" data-value="1">
+                buy NOW
+              </button>
+            </article>
+          </li>
+          <li class="editions__item">
+            <article class="edition">
+              <img class="edition__img" src="images/editions/3.jpg" alt="Atreus and Kratos fight" width="316"
+                height="172">
+              <h3 class="edition__title">
+                Digital Deluxe Edition
+                <span class="edition__subtitle">PS5</span>
+              </h3>
+              <ul class="edition__list">
+                <li class="edition__item">
+                  <p class="edition__text">
+                    All features of Standard Edition
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Darkdale Armour
+                  </p>
+                </li>
+                <li class="edition__item">
+                  <p class="edition__text">
+                    Official digital soundtrack
+                  </p>
+                </li>
+              </ul>
+              <p class="edition__price">29.99$</p>
+              <button class="edition__btn btn buy-button" type="button" data-value="2">
+                buy NOW
+              </button>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="controller section hidden" id="controller">
+      <div class="container container--small">
+        <h2 class="controller__title title">
+          DualSense
+        </h2>
+        <div class="controller__inner">
+          <div class="controller__content">
+            <div class="controller__text">
+              <p>
+                You can also buy an exclusive controller with the
+                <span class="accent">God of War Ragnarok</span>
+                theme for PS5
+              </p>
+              <p>
+                If you purchase a controller and a game (any edition), you will receive a
+                <span class="orange">15%</span>
+                discount on two items.
+              </p>
+            </div>
+            <div class="controller__info">
+              <span class="controller__price">35.99$</span>
+              <button class="controller__btn btn buy-button" type="button" data-value="3">
+                buy dualsense with a game
+              </button>
+            </div>
+          </div>
+
+          <div class="controller__image">
+            <img src="images/controller.png" alt="Controller DualSense">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about section hidden" id="about">
+      <h2 class="about__title title">About Game</h2>
+      <div class="about__video">
+        <video id="video" width="100%" height="auto" poster="images/about/poster.jpg" preload="none">
+          <source src="images/about/trailer.mp4" type="video/mp4">
+        </video>
+        <div class="about__content">
+          <p class="about__text">
+            Watch the Trailer
+          </p>
+          <button class="about__btn">PLAY</button>
+        </div>
+      </div>
+    </section>
+    <section class="explore section hidden" id="explore">
+      <div class="container">
+        <h2 class="explore__title title">
+          Explore the God of War series
+        </h2>
+        <div class="explore__content">
+          <h3 class="explore__subtitle">
+            Here are the God of War (PC) System Requirements
+          </h3>
+          <div class="explore__switch">
+            <span class="explore__switch-text system-req current">Minimum</span>
+            <label class="explore__label">
+              <input class="explore__input sr-only" id="systemReqCheck" name="switch" type="checkbox">
+              <span class="explore__checkbox"></span>
+            </label>
+            <span class="explore__switch-text system-req">Recommended</span>
+          </div>
+          <div class="explore__box">
+            <div class="explore__img explore__img--atreus">
+              <img src="images/explore/atreus.png" alt="Atreus">
+            </div>
+            <div class="explore__box-content">
+              <ul class="explore__list system-req current">
+                <li class="explore__item">
+                  <span>CPU</span>: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
+                </li>
+                <li class="explore__item">
+                  <span>RAM</span>: 8 GB
+                </li>
+                <li class="explore__item">
+                  <span>OS</span>: Windows 10 64-bit
+                </li>
+                <li class="explore__item">
+                  <span>VIDEOCARD</span>: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)
+                </li>
+                <li class="explore__item">
+                  <span>PIXEL SHADER</span>: 5.1
+                </li>
+                <li class="explore__item">
+                  <span>VERTEX SHADER</span>: 5.1
+                </li>
+                <li class="explore__item">
+                  <span>FREE DISK SPACE</span>: 70 GB
+                </li>
+                <li class="explore__item">
+                  <span>DEDICATED VIDEO RAM</span>: 4 GB
+                </li>
+              </ul>
+              <ul class="explore__list system-req">
+                <li class="explore__item">
+                  <span>CPU</span>: Intel i7-7700k (4 core 4.2 GHz) or AMD Ryzen 7 3700x (8 core 3.6 GHz)
+                </li>
+                <li class="explore__item">
+                  <span>RAM</span>: 16 GB DDR
+                </li>
+                <li class="explore__item">
+                  <span>OS</span>: Windows 10 64-bit
+                </li>
+                <li class="explore__item">
+                  <span>VIDEOCARD</span>: NVIDIA RTX 2070 (8GB) or
+                  AMD RX 5700 XT (8GB)
+                </li>
+                <li class="explore__item">
+                  <span>PIXEL SHADER</span>: 5.1
+                </li>
+                <li class="explore__item">
+                  <span>VERTEX SHADER</span>: 5.1
+                </li>
+                <li class="explore__item">
+                  <span>FREE DISK SPACE</span>: 70 GB SSD
+                </li>
+                <li class="explore__item">
+                  <span>DEDICATED VIDEO RAM</span>: 8 GB
+                </li>
+              </ul>
+              <button class="explore__box-btn btn buy-button" type="button" data-value="0">
+                buy NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="explore__content">
+          <h3 class="explore__subtitle">
+            God of War for PS4
+          </h3>
+          <div class="explore__switch">
+            <span class="explore__switch-text ragnarok current">Standard</span>
+            <label class="explore__label">
+              <input class="explore__input sr-only" id="ragnarokCheck" name="switch" type="checkbox">
+              <span class="explore__checkbox"></span>
+            </label>
+            <span class="explore__switch-text ragnarok">Limited</span>
+          </div>
+          <p class="explore__content-price">15.99$</p>
+          <div class="explore__box">
+            <div class="explore__box-content">
+              <ul class="explore__list ragnarok current">
+                <li class="explore__item">
+                  <span>Platform</span>: PS4
+                </li>
+                <li class="explore__item">
+                  <span>Premiere</span>: 20.4.2018
+                </li>
+                <li class="explore__item">
+                  <span>Publisher</span>: Sony Interactive Entertainment Europe
+                </li>
+                <li class="explore__item">
+                  <span>Species</span>: Action, Adventure
+                </li>
+                <li class="explore__item">
+                  <span>Voice</span>: English
+                </li>
+                <li class="explore__item">
+                  <span>Display languages</span>: English
+                </li>
+              </ul>
+              <ul class="explore__list ragnarok">
+                <li class="explore__item">
+                  <span>Platform</span>: PS4, PS5
+                </li>
+                <li class="explore__item">
+                  <span>Premiere</span>: 20.4.2018
+                </li>
+                <li class="explore__item">
+                  <span>Publisher</span>: Sony Interactive Entertainment Europe
+                </li>
+                <li class="explore__item">
+                  <span>Species</span>: Action, Adventure
+                </li>
+                <li class="explore__item">
+                  <span>Voice</span>: English, Polish, Dutch
+                </li>
+                <li class="explore__item">
+                  <span>Display languages</span>: English, Dutch, Polish, Turkish
+                </li>
+              </ul>
+              <button class="explore__box-btn btn buy-button" type="button" data-value="0">
+                buy NOW
+              </button>
+            </div>
+            <div class="explore__img explore__img--kratos">
+              <img src="images/explore/kratos.png" alt="Kratos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news section hidden" id="news">
+      <h2 class="news__title title">News</h2>
+      <div class="news__swiper swiper">
+        <ul class="news__list swiper-wrapper">
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  will receive a large update on release
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/1.jpg" alt="Kratos and Atreus" width="280" height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  God of War: Ragnarok is fast approaching.
+                  No wonder that we have been regularly receiving new information and materials related to the title in
+                  recent times.
+                  Last week, a trailer presenting the possibilities of the game on PlayStation 5
+                  hit the network , and a little earlier we learned that the work on the production was completed .
+                  Meanwhile, it turns
+                  out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on
+                  release.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  is officially one of the largest PS4 games by size
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/2.jpg" alt="a man with a beard" width="280" height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of
+                  Kratos
+                  and Atreus in
+                  the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from
+                  PlayStation
+                  Store, it is
+                  worth planning your download wisely to start the game on the day of the premiere.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  is the final chapter in an epic story. See the new video
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/3.jpg" alt="Kratos saving the child" width="280"
+                height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  Familiar characters will return to the game, but also completely new ones. We are talking here about
+                  Thor,
+                  presented as
+                  a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the
+                  ruler of
+                  the gods
+                  himself, who left his mark on the events of the previous installment, although he did not appear in it
+                  personally.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  will receive a large update on release
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/1.jpg" alt="Kratos and Atreus" width="280" height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  God of War: Ragnarok is fast approaching.
+                  No wonder that we have been regularly receiving new information and materials related to the title in
+                  recent times.
+                  Last week, a trailer presenting the possibilities of the game on PlayStation 5
+                  hit the network , and a little earlier we learned that the work on the production was completed .
+                  Meanwhile, it turns
+                  out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on
+                  release.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  is officially one of the largest PS4 games by size
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/2.jpg" alt="a man with a beard" width="280" height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of
+                  Kratos
+                  and Atreus in
+                  the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from
+                  PlayStation
+                  Store, it is
+                  worth planning your download wisely to start the game on the day of the premiere.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="news__item swiper-slide news-slide">
+            <div class="news-slide__top">
+              <div class="news-slide__top-box">
+                <p class="news-slide__subtitle">
+                  God of War Ragnarok
+                </p>
+                <h3 class="news-slide__title">
+                  is the final chapter in an epic story. See the new video
+                </h3>
+              </div>
+              <span class="news-slide__date">19/10/2022</span>
+            </div>
+            <div class="news-slide__content">
+              <img class="news-slide__img" src="images/news/3.jpg" alt="Kratos saving the child" width="280"
+                height="250">
+              <div class="news-slide__box">
+                <p class="news-slide__text">
+                  Familiar characters will return to the game, but also completely new ones. We are talking here about
+                  Thor,
+                  presented as
+                  a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the
+                  ruler of
+                  the gods
+                  himself, who left his mark on the events of the previous installment, although he did not appear in it
+                  personally.
+                </p>
+                <button class="news-slide__btn btn" type="button">
+                  read
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="news__arrows">
+          <div class="news__swiper-prev news__swiper-arrow">
+            <svg class="news__swiper-icon" width="16" height="16">
+              <use href="images/sprite.svg#arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="news__swiper-next news__swiper-arrow">
+            <svg class="news__swiper-icon" width="16" height="16">
+              <use href="images/sprite.svg#arrow-next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq section hidden" id="faq">
+      <div class="container container--small">
+        <h2 class="faq__title title">
+          FAQ
+        </h2>
+        <div class="faq__items">
+          <div class="faq__item">
+            <div class="faq__item-top">
+              <h3 class="faq__item-title">
+                When is the next God of War coming out?
+              </h3>
+              <span class="faq__btn">
+                <svg class="faq__icon" width="12" height="12">
+                  <use href="images/sprite.svg#plus"></use>
+                </svg>
+              </span>
+            </div>
+            <p class="faq__item-content">
+              God of War Ragnarök will release on <span class="orange">November 9, 2022</span>. To get the latest
+              updates on
+              release timing, make sure
+              you follow
+              Santa Monica Studio on Twitter, Instagram and Facebook!
+            </p>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item-top">
+              <h3 class="faq__item-title">
+                Will God of War Ragnarök have an upgrade path?
+              </h3>
+              <span class="faq__btn">
+                <svg class="faq__icon" width="12" height="12">
+                  <use href="images/sprite.svg#plus"></use>
+                </svg>
+              </span>
+            </div>
+            <p class="faq__item-content">
+              Yes, <span class="orange">God of War Ragnarök</span> will offer a digital upgrade* option from a disc or
+              digital PS4 game to the digital
+              PS5 version
+              for an additional cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal__inner" style="background-image: url('images/modal-bg.png');">
+        <button class="modal__close" type="button">
+          <svg class="modal__close-icon" width="9" height="9">
+            <use href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">
+          GOD OF WAR RAGNAROK
+        </h2>
+        <p class="modal__edition">
+          STANDARD EDTION
+        </p>
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            CREDIT CARD:
+            <input class="modal__input" id="card" type="text" placeholder="0000 0000 0000 0000" name="card"
+              maxlength="19" required>
+          </label>
+          <div class="modal__label-box">
+            <label class="modal__label modal__label--small">
+              expire:
+              <input class="modal__input" id="expire" type="text" placeholder="mm/yy" name="expire" maxlength="5"
+                required>
+            </label>
+            <label class="modal__label modal__label--small">
+              CVV:
+              <input class="modal__input" type="password" placeholder="***" name="cvv" maxlength="3" required>
+            </label>
+          </div>
+          <label class="modal__label">
+            INSTANT:
+            <input class="modal__input" type="text" placeholder="John Doe" name="name" required>
+          </label>
+          <label class="modal__label modal__label--check">
+            I agree with the <a class="orange" href="#">rules</a> of the site
+            <input class="modal__check sr-only" type="checkbox" name="rules" required>
+            <span class="modal__checkbox"></span>
+          </label>
+          <p class="modal__text">
+            Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms
+            plus
+            any
+            specific additional conditions applying to this product. If you do not wish to accept these terms, do not
+            download
+            this
+            product. See Terms of Service for more important information.
+          </p>
+          <div class="modal__summa">
+            <p class="modal__info">
+              YOUR TOTAL SUMMA:
+            </p>
+            <p class="modal__price">
+              19.99$
+            </p>
+          </div>
+          <button class="modal__btn btn" type="submit">buy NOW</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer" style="background-image: url('images/footer-bg.png');">
+    <div class="container container--small">
+      <ul class="footer__menu">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#editions">editions</a>
         </li>
-        <li class="menu__item">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#controller">controller</a>
         </li>
-        <li class="menu__item">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#about">ABOUT GAME</a>
         </li>
-        <li class="menu__item">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#explore">Explore</a>
         </li>
-        <li class="menu__item">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#news">news</a>
         </li>
-        <li class="menu__item">
+        <li class="footer__menu-item">
           <a class="menu__link" href="#faq">FAQ</a>
         </li>
       </ul>
-    </nav>
-    <div class="header__timer">
-      <span class="header__timer-info">Realease:</span>
-      <ul class="header__timer-content">
-        <li class="header__timer-item">
-          <span class="header__timer-num" id="days">0</span>
-          <span class="header__timer-text">D</span>
-        </li>
-        <li class="header__timer-item">
-          <span class="header__timer-num" id="hours">0</span>
-          <span class="header__timer-text">H</span>
-        </li>
-        <li class="header__timer-item">
-          <span class="header__timer-num" id="minutes">0</span>
-          <span class="header__timer-text">M</span>
-        </li>
-        <li class="header__timer-item">
-          <span class="header__timer-num" id="seconds">0</span>
-          <span class="header__timer-text">S</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
-  <main class="main">
-    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
-  <div class="container">
-    <div class="hero__content">
-      <h1 class="hero__title">God of War Ragnarök</h1>
-      <p class="hero__text">
-        Taking place three years following the events of the previous game, Fimbulwinter, a great winter that spans
-        three
-        summers, is drawing to a close which will begin the prophesied Ragnarök.
-      </p>
-      <button class="btn btn--big buy-button" data-value="0">
-        buy NOW
-      </button>
-    </div>
-  </div>
-</section>
-    <section class="editions section hidden" id="editions">
-  <div class="container">
-    <h2 class="editions__title title">
-      Editions
-    </h2>
-    <ul class="editions__items">
-      <li class="editions__item">
-        <article class="edition">
-          <img class="edition__img" src="images/editions/1.jpg" alt="Atreus and Kratos" width="316" height="172">
-          <h3 class="edition__title">
-            Standard Edition
-            <span class="edition__subtitle">PS5</span>
-          </h3>
-          <ul class="edition__list">
-            <li class="edition__item">
-              <p class="edition__text">
-                Offline play enabled
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Remote Play supported
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Trigger effect required
-              </p>
-            </li>
-          </ul>
-          <p class="edition__price">19.99$</p>
-          <button class="edition__btn btn buy-button" type="button" data-value="0">
-            buy NOW
-          </button>
-        </article>
-      </li>
-      <li class="editions__item">
-        <article class="edition">
-          <img class="edition__img" src="images/editions/2.jpg" alt="Atreus and Kratos" width="316" height="172">
-          <h3 class="edition__title">
-            Standard Edition
-            <span class="edition__subtitle">PS4</span>
-          </h3>
-          <ul class="edition__list">
-            <li class="edition__item">
-              <p class="edition__text">
-                Offline play enabled
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Remote Play supported
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Trigger effect required
-              </p>
-            </li>
-          </ul>
-          <p class="edition__price">18.99$</p>
-          <button class="edition__btn btn buy-button" type="button" data-value="1">
-            buy NOW
-          </button>
-        </article>
-      </li>
-      <li class="editions__item">
-        <article class="edition">
-          <img class="edition__img" src="images/editions/3.jpg" alt="Atreus and Kratos fight" width="316" height="172">
-          <h3 class="edition__title">
-            Digital Deluxe Edition
-            <span class="edition__subtitle">PS5</span>
-          </h3>
-          <ul class="edition__list">
-            <li class="edition__item">
-              <p class="edition__text">
-                All features of Standard Edition
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Darkdale Armour
-              </p>
-            </li>
-            <li class="edition__item">
-              <p class="edition__text">
-                Official digital soundtrack
-              </p>
-            </li>
-          </ul>
-          <p class="edition__price">29.99$</p>
-          <button class="edition__btn btn buy-button" type="button" data-value="2">
-            buy NOW
-          </button>
-        </article>
-      </li>
-    </ul>
-  </div>
-</section>
-    <section class="controller section hidden" id="controller">
-  <div class="container container--small">
-    <h2 class="controller__title title">
-      DualSense
-    </h2>
-    <div class="controller__inner">
-      <div class="controller__content">
-        <div class="controller__text">
-          <p>
-            You can also buy an exclusive controller with the
-            <span class="accent">God of War Ragnarok</span>
-            theme for PS5
-          </p>
-          <p>
-            If you purchase a controller and a game (any edition), you will receive a
-            <span class="orange">15%</span>
-            discount on two items.
-          </p>
-        </div>
-        <div class="controller__info">
-          <span class="controller__price">35.99$</span>
-          <button class="controller__btn btn buy-button" type="button" data-value="3">
-            buy dualsense with a game
-          </button>
-        </div>
-      </div>
-
-      <div class="controller__image">
-        <img src="images/controller.png" alt="Controller DualSense">
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="about section hidden" id="about">
-  <h2 class="about__title title">About Game</h2>
-  <div class="about__video">
-    <video id="video" width="100%" height="auto" poster="images/about/poster.jpg" preload="none">
-      <source src="images/about/trailer.mp4" type="video/mp4">
-    </video>
-    <div class="about__content">
-      <p class="about__text">
-        Watch the Trailer
-      </p>
-      <button class="about__btn">PLAY</button>
-    </div>
-  </div>
-</section>
-    <section class="explore section hidden" id="explore">
-  <div class="container">
-    <h2 class="explore__title title">
-      Explore the God of War series
-    </h2>
-    <div class="explore__content">
-      <h3 class="explore__subtitle">
-        Here are the God of War (PC) System Requirements
-      </h3>
-      <div class="explore__switch">
-        <span class="explore__switch-text system-req current">Minimum</span>
-        <label class="explore__label">
-          <input class="explore__input sr-only" id="systemReqCheck" name="switch" type="checkbox">
-          <span class="explore__checkbox"></span>
-        </label>
-        <span class="explore__switch-text system-req">Recommended</span>
-      </div>
-      <div class="explore__box">
-        <div class="explore__img explore__img--atreus">
-          <img src="images/explore/atreus.png" alt="Atreus">
-        </div>
-        <div class="explore__box-content">
-          <ul class="explore__list system-req current">
-            <li class="explore__item">
-              <span>CPU</span>: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
-            </li>
-            <li class="explore__item">
-              <span>RAM</span>: 8 GB
-            </li>
-            <li class="explore__item">
-              <span>OS</span>: Windows 10 64-bit
-            </li>
-            <li class="explore__item">
-              <span>VIDEOCARD</span>: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)
-            </li>
-            <li class="explore__item">
-              <span>PIXEL SHADER</span>: 5.1
-            </li>
-            <li class="explore__item">
-              <span>VERTEX SHADER</span>: 5.1
-            </li>
-            <li class="explore__item">
-              <span>FREE DISK SPACE</span>: 70 GB
-            </li>
-            <li class="explore__item">
-              <span>DEDICATED VIDEO RAM</span>: 4 GB
-            </li>
-          </ul>
-          <ul class="explore__list system-req">
-            <li class="explore__item">
-              <span>CPU</span>: Intel i7-7700k (4 core 4.2 GHz) or AMD Ryzen 7 3700x (8 core 3.6 GHz)
-            </li>
-            <li class="explore__item">
-              <span>RAM</span>: 16 GB DDR
-            </li>
-            <li class="explore__item">
-              <span>OS</span>: Windows 10 64-bit
-            </li>
-            <li class="explore__item">
-              <span>VIDEOCARD</span>: NVIDIA RTX 2070 (8GB) or
-              AMD RX 5700 XT (8GB)
-            </li>
-            <li class="explore__item">
-              <span>PIXEL SHADER</span>: 5.1
-            </li>
-            <li class="explore__item">
-              <span>VERTEX SHADER</span>: 5.1
-            </li>
-            <li class="explore__item">
-              <span>FREE DISK SPACE</span>: 70 GB SSD
-            </li>
-            <li class="explore__item">
-              <span>DEDICATED VIDEO RAM</span>: 8 GB
-            </li>
-          </ul>
-          <button class="explore__box-btn btn buy-button" type="button" data-value="0">
-            buy NOW
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="explore__content">
-      <h3 class="explore__subtitle">
-        God of War for PS4
-      </h3>
-      <div class="explore__switch">
-        <span class="explore__switch-text ragnarok current">Standard</span>
-        <label class="explore__label">
-          <input class="explore__input sr-only" id="ragnarokCheck" name="switch" type="checkbox">
-          <span class="explore__checkbox"></span>
-        </label>
-        <span class="explore__switch-text ragnarok">Limited</span>
-      </div>
-      <p class="explore__content-price">15.99$</p>
-      <div class="explore__box">
-        <div class="explore__box-content">
-          <ul class="explore__list ragnarok current">
-            <li class="explore__item">
-              <span>Platform</span>: PS4
-            </li>
-            <li class="explore__item">
-              <span>Premiere</span>: 20.4.2018
-            </li>
-            <li class="explore__item">
-              <span>Publisher</span>: Sony Interactive Entertainment Europe
-            </li>
-            <li class="explore__item">
-              <span>Species</span>: Action, Adventure
-            </li>
-            <li class="explore__item">
-              <span>Voice</span>: English
-            </li>
-            <li class="explore__item">
-              <span>Display languages</span>: English
-            </li>
-          </ul>
-          <ul class="explore__list ragnarok">
-            <li class="explore__item">
-              <span>Platform</span>: PS4, PS5
-            </li>
-            <li class="explore__item">
-              <span>Premiere</span>: 20.4.2018
-            </li>
-            <li class="explore__item">
-              <span>Publisher</span>: Sony Interactive Entertainment Europe
-            </li>
-            <li class="explore__item">
-              <span>Species</span>: Action, Adventure
-            </li>
-            <li class="explore__item">
-              <span>Voice</span>: English, Polish, Dutch
-            </li>
-            <li class="explore__item">
-              <span>Display languages</span>: English, Dutch, Polish, Turkish
-            </li>
-          </ul>
-          <button class="explore__box-btn btn buy-button" type="button" data-value="0">
-            buy NOW
-          </button>
-        </div>
-        <div class="explore__img explore__img--kratos">
-          <img src="images/explore/kratos.png" alt="Kratos">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="news section hidden" id="news">
-  <h2 class="news__title title">News</h2>
-  <div class="news__swiper swiper">
-    <ul class="news__list swiper-wrapper">
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              will receive a large update on release
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/1.jpg" alt="Kratos and Atreus" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              God of War: Ragnarok is fast approaching.
-              No wonder that we have been regularly receiving new information and materials related to the title in
-              recent times.
-              Last week, a trailer presenting the possibilities of the game on PlayStation 5
-              hit the network , and a little earlier we learned that the work on the production was completed .
-              Meanwhile, it turns
-              out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on
-              release.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              is officially one of the largest PS4 games by size
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/2.jpg" alt="a man with a beard" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of Kratos
-              and Atreus in
-              the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from PlayStation
-              Store, it is
-              worth planning your download wisely to start the game on the day of the premiere.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              is the final chapter in an epic story. See the new video
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/3.jpg" alt="Kratos saving the child" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              Familiar characters will return to the game, but also completely new ones. We are talking here about Thor,
-              presented as
-              a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the ruler of
-              the gods
-              himself, who left his mark on the events of the previous installment, although he did not appear in it
-              personally.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              will receive a large update on release
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/1.jpg" alt="Kratos and Atreus" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              God of War: Ragnarok is fast approaching.
-              No wonder that we have been regularly receiving new information and materials related to the title in
-              recent times.
-              Last week, a trailer presenting the possibilities of the game on PlayStation 5
-              hit the network , and a little earlier we learned that the work on the production was completed .
-              Meanwhile, it turns
-              out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on
-              release.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              is officially one of the largest PS4 games by size
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/2.jpg" alt="a man with a beard" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of Kratos
-              and Atreus in
-              the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from PlayStation
-              Store, it is
-              worth planning your download wisely to start the game on the day of the premiere.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-      <li class="news__item swiper-slide news-slide">
-        <div class="news-slide__top">
-          <div class="news-slide__top-box">
-            <p class="news-slide__subtitle">
-              God of War Ragnarok
-            </p>
-            <h3 class="news-slide__title">
-              is the final chapter in an epic story. See the new video
-            </h3>
-          </div>
-          <span class="news-slide__date">19/10/2022</span>
-        </div>
-        <div class="news-slide__content">
-          <img class="news-slide__img" src="images/news/3.jpg" alt="Kratos saving the child" width="280" height="250">
-          <div class="news-slide__box">
-            <p class="news-slide__text">
-              Familiar characters will return to the game, but also completely new ones. We are talking here about Thor,
-              presented as
-              a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the ruler of
-              the gods
-              himself, who left his mark on the events of the previous installment, although he did not appear in it
-              personally.
-            </p>
-            <button class="news-slide__btn btn" type="button">
-              read
-            </button>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <div class="news__arrows">
-      <div class="news__swiper-prev news__swiper-arrow">
-        <svg class="news__swiper-icon" width="16" height="16">
-          <use href="images/sprite.svg#arrow-prev"></use>
-        </svg>
-      </div>
-      <div class="news__swiper-next news__swiper-arrow">
-        <svg class="news__swiper-icon" width="16" height="16">
-          <use href="images/sprite.svg#arrow-next"></use>
-        </svg>
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="faq section hidden" id="faq">
-  <div class="container container--small">
-    <h2 class="faq__title title">
-      FAQ
-    </h2>
-    <div class="faq__items">
-      <div class="faq__item">
-        <div class="faq__item-top">
-          <h3 class="faq__item-title">
-            When is the next God of War coming out?
-          </h3>
-          <span class="faq__btn">
-            <svg class="faq__icon" width="12" height="12">
-              <use href="images/sprite.svg#plus"></use>
-            </svg>
-          </span>
-        </div>
-        <p class="faq__item-content">
-          God of War Ragnarök will release on <span class="orange">November 9, 2022</span>. To get the latest updates on
-          release timing, make sure
-          you follow
-          Santa Monica Studio on Twitter, Instagram and Facebook!
+      <div class="footer__content">
+        <p class="footer__text">
+          Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms
+          plus
+          any
+          specific additional conditions applying to this product. If you do not wish to accept these terms, do not
+          download
+          this
+          product. See Terms of Service for more important information.
         </p>
-      </div>
-      <div class="faq__item">
-        <div class="faq__item-top">
-          <h3 class="faq__item-title">
-            Will God of War Ragnarök have an upgrade path?
-          </h3>
-          <span class="faq__btn">
-            <svg class="faq__icon" width="12" height="12">
-              <use href="images/sprite.svg#plus"></use>
-            </svg>
-          </span>
-        </div>
-        <p class="faq__item-content">
-          Yes, <span class="orange">God of War Ragnarök</span> will offer a digital upgrade* option from a disc or
-          digital PS4 game to the digital
-          PS5 version
-          for an additional cost.
+        <img class="footer__img" src="images/ps.png" alt="ps" width="46" height="35">
+        <p class="footer__year">2023</p>
+        <p class="footer__copy">
+          Developed by <a class="accent" href="https://github.com/maksimkedys">MaksimKedys</a>. All rights reserved
         </p>
       </div>
     </div>
-  </div>
-</section>
-    <div class="modal">
-  <div class="modal__inner" style="background-image: url('images/modal-bg.png');">
-    <button class="modal__close" type="button">
-      <svg class="modal__close-icon" width="9" height="9">
-        <use href="images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal__title">
-      GOD OF WAR RAGNAROK
-    </h2>
-    <p class="modal__edition">
-      STANDARD EDTION
-    </p>
-    <form class="modal__form" action="#">
-      <label class="modal__label">
-        CREDIT CARD:
-        <input class="modal__input" id="card" type="text" placeholder="0000 0000 0000 0000" name="card" maxlength="19"
-          required>
-      </label>
-      <div class="modal__label-box">
-        <label class="modal__label modal__label--small">
-          expire:
-          <input class="modal__input" id="expire" type="text" placeholder="mm/yy" name="expire" maxlength="5" required>
-        </label>
-        <label class="modal__label modal__label--small">
-          CVV:
-          <input class="modal__input" type="password" placeholder="***" name="cvv" maxlength="3" required>
-        </label>
-      </div>
-      <label class="modal__label">
-        INSTANT:
-        <input class="modal__input" type="text" placeholder="John Doe" name="name" required>
-      </label>
-      <label class="modal__label modal__label--check">
-        I agree with the <a class="orange" href="#">rules</a> of the site
-        <input class="modal__check sr-only" type="checkbox" name="rules" required>
-        <span class="modal__checkbox"></span>
-      </label>
-      <p class="modal__text">
-        Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms
-        plus
-        any
-        specific additional conditions applying to this product. If you do not wish to accept these terms, do not
-        download
-        this
-        product. See Terms of Service for more important information.
-      </p>
-      <div class="modal__summa">
-        <p class="modal__info">
-          YOUR TOTAL SUMMA:
-        </p>
-        <p class="modal__price">
-          19.99$
-        </p>
-      </div>
-      <button class="modal__btn btn" type="submit">buy NOW</button>
-    </form>
-  </div>
-</div>
-  </main>
-  <footer class="footer" style="background-image: url('images/footer-bg.png');">
-  <div class="container container--small">
-    <ul class="footer__menu">
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#editions">editions</a>
-      </li>
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#controller">controller</a>
-      </li>
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#about">ABOUT GAME</a>
-      </li>
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#explore">Explore</a>
-      </li>
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#news">news</a>
-      </li>
-      <li class="footer__menu-item">
-        <a class="menu__link" href="#faq">FAQ</a>
-      </li>
-    </ul>
-    <div class="footer__content">
-      <p class="footer__text">
-        Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms
-        plus
-        any
-        specific additional conditions applying to this product. If you do not wish to accept these terms, do not
-        download
-        this
-        product. See Terms of Service for more important information.
-      </p>
-      <img class="footer__img" src="images/ps.png" alt="ps" width="46" height="35">
-      <p class="footer__year">2023</p>
-      <p class="footer__copy">
-        Developed by <a class="accent" href="https://github.com/maksimkedys">MaksimKedys</a>. All rights reserved
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
   <script src="js/main.min.js" type="module"></script>
 </body>
 
